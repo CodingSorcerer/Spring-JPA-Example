@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import testing.example.com.dataObjects.Employee;
 
 @Repository
-@CrudRepo(entityClass = Employee.class, basePathName = "test")
+@CrudRepo(entityClass = Employee.class, basePathName = "api", allowDelete = false)
 public interface EmployeeRepository extends CrudRepository<Employee,String>
 {
 }
